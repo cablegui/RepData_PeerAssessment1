@@ -254,7 +254,7 @@ For this part the weekdays() function may be of some help here. Use the dataset 
     
     ```r
     library(ggplot2)
-    ggplot(clean_week_steps_per_day, aes(x = interval, y = mean_steps)) + geom_line() + 
+    ggplot(clean_week_steps_per_day, aes(x = interval, y = mean_steps)) + geom_line(col = "blue") + 
         facet_wrap(~week_indicator, scales = "free_y", ncol = 1) + ylab("Number of steps")
     ```
     
