@@ -82,7 +82,7 @@ For this part of the assignment, you can ignore the missing values in the datase
     # steps_per_day$date <- as.Date(steps_per_day$date)
     
     hist(steps_per_day$no_of_steps, col = "blue", main = "Histogram of sum of steps per day", 
-        ylab = "percentage of days", xlab = "no of steps", ylim = c(0, 30))
+        ylab = "no of days", xlab = "no of steps", ylim = c(0, 30))
     ```
     
     ![plot of chunk unnamed-chunk-3](figure/unnamed-chunk-3.png) 
@@ -207,7 +207,7 @@ Note that there are a number of days/intervals where there are missing values (c
     
     colnames(clean_steps_per_day) <- c("date", "no_of_steps")
     hist(clean_steps_per_day$no_of_steps, col = "blue", main = "Histogram of sum of steps per day (cleaned)", 
-        ylab = "percentage of days", xlab = "no of steps", ylim = c(0, 40))
+        ylab = "no of days", xlab = "no of steps", ylim = c(0, 40))
     ```
     
     ![plot of chunk unnamed-chunk-9](figure/unnamed-chunk-9.png) 
